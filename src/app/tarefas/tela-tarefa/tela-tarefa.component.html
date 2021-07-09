@@ -1,0 +1,41 @@
+<div class="container f-tela-tarefa" 
+    >
+
+    <h5 class="mt-5" 
+            [ngClass]="{
+                'h5-trabalho':categoria == 'Trabalho',
+                'h5-estudo':categoria == 'Estudo',
+                'h5-diversao':categoria == 'Diversão',
+                'h5-outro':categoria == ''}">
+        {{titulo}}
+    </h5>
+
+    <span class="f-descricao">{{descricao}}</span>
+    <span>{{prazo}}</span>
+    <span class="f-categoria" 
+        [ngClass]="{'trabalho':categoria == 'Trabalho',
+                    'estudo':categoria == 'Estudo',
+                    'diversao':categoria == 'Diversão',
+                    'outro':categoria == ''}">
+        {{categoria}}
+    </span>
+    <span class="f-membros">{{membros}}</span>
+    <span>{{anexo}}</span>
+
+    <hr>
+    
+    <div class="row">
+        <div class="col-sm-auto ml-3 mt-3">
+            <label for="">
+                <input type="checkbox" name="" id="">sub-tarefa exemplo
+            </label>
+            <label for="">
+                <input type="checkbox" name="" id="">sub-tarefa exemplo
+            </label>
+            <label for="">
+                <input type="checkbox" name="" id="">sub-tarefa exemplo
+            </label>
+        </div>
+    </div>
+
+</div>

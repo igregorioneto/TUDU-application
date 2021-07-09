@@ -1,0 +1,25 @@
+<div class="container f-login">
+    <div class="f-return mt-5">
+        <span class="material-icons" routerLink="/boas-vindas">
+            arrow_downward
+        </span>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center f-login">
+            <h3>Entrar</h3>
+
+            <input class="form-control form-control-sm f-email" type="text" placeholder="E-mail" [(ngModel)]="email">
+            <input class="form-control form-control-sm f-senha" type="password" placeholder="Senha" [(ngModel)]="senha">
+
+            <button type="button" class="btn btn-block btn-primary b-entrar" (click)="login()">
+                Entrar
+            </button>
+            <button type="button" class="btn btn-block b-google">
+                Entrar com o Google
+            </button>
+
+            <a routerLink="/cadastro">Não tenho conta</a>
+        </div>
+    </div>
+    
+</div>

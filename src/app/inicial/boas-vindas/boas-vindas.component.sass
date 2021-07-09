@@ -1,0 +1,29 @@
+@import '../sass/mixins'
+@import '../../../sass/mixins'
+h3
+    @include h3()
+img
+    max-width: 100%
+    height: 200px
+    margin-bottom: 10px
+
+p
+    color: #acaeaf
+    margin-bottom: 30px
+
+.card-footer
+    @include rodape-cofig()
+    background-color: rgb(235,244,253)
+    border-top: 0 solid rgba(0,0,0,.125)
+    border-top-right-radius: 50px
+    border-top-left-radius: 50px
+    text-align: center
+    
+.material-icons
+    color: #6AA5FF
+
+.carousel-indicators>li
+    border-radius: 50%
+    width: 12px
+    height: 12px
+    background-color: #474646

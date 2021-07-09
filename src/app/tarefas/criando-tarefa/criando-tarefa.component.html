@@ -1,0 +1,70 @@
+<div class="container">
+    <h5 class="text-center mt-5">Criar tarefa</h5>
+
+    <div class="container">
+        <div class="mt-5">
+            <input class="form-control form-control-lg" 
+                [(ngModel)]="titulo"
+                type="text" required id="text" 
+                placeholder="Digite o título"> 
+        </div>
+
+        <div class="mt-3">
+            <textarea class="form-control" 
+                id="exampleFormControlTextarea1" rows="1" 
+                [(ngModel)]="descricao"
+                placeholder="Adicione uma descrição (opcional)"></textarea>
+        </div>
+
+        <div class="mt-3 ml-2">
+            <input type="text" placeholder="Inserir prazo" 
+                onfocus="(this.type='date')"
+                [(ngModel)]="prazo"
+                onblur="(this.type='text')" id="date">
+        </div>
+
+        <div class="mt-3">
+            <select [(ngModel)]="categoria" class="form-control form-control-sm">
+                <option value="" disabled selected>Inserir categoria</option>
+                <option>Trabalho</option>
+                <option>Estudo</option>
+                <option>Diversão</option>
+            </select>            
+        </div>
+
+        <div class="mt-3">
+            <select [(ngModel)]="membros" class="form-control form-control-sm">
+                <option value="" disabled selected>Adicionar membros</option>
+                <option>Luis Carlos</option>
+                <option>Juliana Araujo</option>
+                <option>Felipe Campos</option>
+            </select>            
+        </div>
+
+        <div class="mt-3  ml-2">
+            <label class="l-file" for="anexo">Inserir anexos</label>
+            <input type="file" [(ngModel)]="anexo" name="anexo" id="anexo">
+        </div>
+
+        <hr>
+
+        <div class="sub-tarefa">
+            <div class="row" *ngFor="let item of subtarefas; let i = index">
+                <div class="col ml-5 mt-2">
+                        <input class="form-check-input"
+                        type="checkbox" [value]="item" [id]="item" 
+                        > 
+                        <label class="form-check-label" [for]="item" >
+                            {{item}}
+                        </label>                  
+                </div>
+            </div>
+        </div>
+
+        <div  class="float-right mr-4">
+            <button type="button" 
+            (click)="criarTarefa()"
+            class="btn btn-link">Criar</button>
+        </div>
+    </div>
+</div>
