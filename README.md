@@ -11,6 +11,7 @@ json-server --watch DB.json
 npm start
 ```
 ### Algumas explicações:
+- Visualizar com tela de smartphone
 - Ao logar no sistema o mesmo grava o id do membro como se fosse um token, como não tenho um token vindo de uma requisição, decidi gravar no localstorage o id mesmo do membro para realizar esta simulação.
 - Foi colocado o guard nas rotas, justamente para proteção das mesmas para não acessarem sem estar logado.
 - Na parte de pesquisa do Planner é só clicar em uma data e clicar no botão para pesquisar as tarefas cadastradas com aquele prazo.
