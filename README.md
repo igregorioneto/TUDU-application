@@ -16,8 +16,3 @@ npm start
 - Na parte de pesquisa do Planner é só clicar em uma data e clicar no botão para pesquisar as tarefas cadastradas com aquele prazo.
 - Resolvi criar uma tela de membros que lista membros cadastrados.
 - Esta tendo notificações seja de sucesso ou de erro.
-
-### Este projeto será atualizado no github
-```
-
-```
